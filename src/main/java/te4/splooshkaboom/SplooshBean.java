@@ -20,6 +20,13 @@ import javax.websocket.server.ServerEndpoint;
 /**
  *
  * @author L
+ * 
+ * Plan:
+ * @OnOpen, create two users & 3 ships.
+ * Front end sends this coordinate (150,100) backend checks if it's a hit
+ * If hit adds one point to user
+ * if miss i++ to playercheck(); changes user.
+ * Score is displayed on the site
  */
 //Gör ship123 till json data
 @ServerEndpoint("/endpoint")
@@ -31,13 +38,21 @@ public class SplooshBean {
     public void open(Session user) {
         sessions.add(user);
         sessions.add(user);
+        
+        Ship test1 = new Ship(50, 100);
+        Ship test2 = new Ship(250, 150);
+        Ship test3 = new Ship(450, 300);
+//        Ship ship1 = new Ship(setpos(), setpos());
+//        Ship ship2 = new Ship(setpos(), setpos());
+//        Ship ship3 = new Ship(setpos(), setpos());
+        
+        
+        
     }
 
     @OnMessage
     public void onMessage(String Ship, Session user) throws IOException {
-        Ship ship1 = new Ship(setpos(), setpos());
-        Ship ship2 = new Ship(setpos(), setpos());
-        Ship ship3 = new Ship(setpos(), setpos());
+        
 
     }
 
