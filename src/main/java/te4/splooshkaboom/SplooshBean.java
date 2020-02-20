@@ -42,10 +42,6 @@ public class SplooshBean {
         Ship test1 = new Ship(50, 100);
         Ship test2 = new Ship(250, 150);
         Ship test3 = new Ship(450, 300);
-//        Ship ship1 = new Ship(setpos(), setpos());
-//        Ship ship2 = new Ship(setpos(), setpos());
-//        Ship ship3 = new Ship(setpos(), setpos());
-        
         
         
     }
